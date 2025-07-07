@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
     --cons-gap: 1.2em;
 }
@@ -7,39 +9,57 @@
     margin: 0;
 }
 
+.side-bar {
+    background-color: rgb(1, 179, 228);
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr;
+    height: 100vh;
+    padding: 25px;
+    gap: 3em;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100vh;
+    grid-template-columns: 1fr 5fr;
 }
 
-.side-bar {
-    background-color: blue;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 6fr;
+.navigation,
+.utilities {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
 }
 
-.dash-logo,
-.main-logo {
-    background-color: aqua;
+a,
+.logo {
+    color: white;
+    font-weight: 750;
 }
 
-.top-section {
-    background-color: black;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    height: 20vh;
+a {
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
 }
 
-.bottom-section {
-    background-color: brown;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    gap: var(--cons-gap);
+img {
+    height: 30px;
+    width: 30px;
+    color: aliceblue;
 }
-.search-bar {
-    background-color: blueviolet;
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 1.2em;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
 }
