@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Parisienne&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
     --cons-gap: 1.2em;
+    --main-color: rgb(1, 179, 228);
 }
 
 * {
@@ -10,7 +11,7 @@
 }
 
 .side-bar {
-    background-color: rgb(1, 179, 228);
+    background-color: var(--main-color);
     display: grid;
     grid-template-rows: 1fr 3fr 5fr;
     height: 100vh;
@@ -39,7 +40,7 @@ a,
 a {
     text-decoration: none;
     font-size: large;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     display: flex;
     align-items: center;
     gap: 0.7em;
@@ -51,7 +52,7 @@ img {
     color: aliceblue;
 }
 
-.logo {
+.logo-a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,4 +63,53 @@ img {
 .logo img {
     width: 40px;
     height: 40px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: whitesmoke;
+}
+
+.search-bar {
+    display: flex;
+    padding: 20px 50px;
+}
+
+input {
+    height: 30px;
+    width: 600px;
+    border-radius: 12px;
+    border: 1px solid violet;
+    padding: 0 20px;
+}
+
+p {
+    color: black;
+}
+
+
+.logo-b,
+.sec-logo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1.2em;
+    padding: 20px;
+}
+
+
+button {
+    background-color: var(--main-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 0.1px solid blue;
+    margin: 0 5px;
 }
